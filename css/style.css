@@ -1,0 +1,532 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #373B44;
+    --second-color: #FF7361;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ======= Start Header ================*/
+.social {
+    background-color: #2F3239;
+    text-align: end;
+}
+
+.social a {
+    color: #535762;
+    margin: 0px 5px;
+}
+
+/* ======= End Header ================*/
+
+/* ======= Start NavBar ================*/
+nav {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.logo img {
+    width: 80px;
+    height: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .title p {
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+}
+
+nav ul a {
+    color: #fff;
+    padding: 15px;
+}
+
+/* nav ul a:focus {
+    background-color: var(--second-color);
+} */
+
+.active {
+    background-color: var(--second-color);
+}
+
+/* ======= End NavBar ================*/
+
+
+/* ======= Start Section Home 1 ================*/
+.home-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section:nth-of-type(1) {
+    background-color: var(--second-color);
+    overflow: auto;
+}
+
+.home-caption {
+    margin: 40px 0px;
+}
+
+.home-caption :first-child {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 80%;
+}
+
+.home-caption :nth-child(2) {
+    color: #ddd;
+    font-size: 13px;
+    margin: 15px 0px;
+    line-height: 20px;
+
+}
+
+.home-caption button {
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ======= End Section Home 1 ================*/
+
+
+/* ======= Start Section Home 2 ================*/
+section:nth-of-type(2) {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section:nth-of-type(2) .boxes {
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-color);
+    width: 48%;
+    padding: 15px;
+    margin: 15px 0px;
+    line-height: 1.5;
+    border-radius: 8px;
+    box-shadow: 3px 3px 25px -2px rgba(0, 0, 0, 0.62);
+    ;
+
+}
+
+section:nth-of-type(2) .boxes i {
+    margin-right: 15px;
+    font-size: 35px;
+}
+
+.box-title p {
+    font-size: 11px;
+
+}
+
+/* ======= End Section Home 2 ================*/
+
+
+/* ======= Start Footer ================*/
+footer {
+    background-color: var(--main-color);
+    padding: 30px 0px;
+    text-align: center;
+}
+
+footer a {
+    background-color: #fff;
+    color: #535762;
+    padding: 10px;
+    margin: 20px 10px;
+    border-radius: 50%;
+
+}
+
+/* ======= End Footer ================*/
+
+
+
+/* ======= Start Section About ================*/
+.links {
+    padding: 20px;
+}
+
+.links a,
+.links .container a:nth-child(2) {
+    color: #fff;
+}
+
+.links a:visited {
+    color: #2F3239;
+}
+
+.about-title {
+    background-color: #ddd;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #535762;
+
+}
+
+.about-title p {
+    font-size: 12px;
+    margin: 10px 0px;
+    line-height: 20px;
+}
+
+.our-team {
+    background-color: var(--second-color);
+    margin: 50px auto;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.our-team i {
+    background-color: #E65D4B;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.teams.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.team i {
+    padding: 50px 70px;
+    font-size: 50px;
+    color: #535762;
+    background-color: #ddd;
+    border-radius: 5px;
+    
+}
+
+.team h3 {
+    color: #535762;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+.team p {
+    color: #535762;
+    font-size: 10px;
+    margin: 10px 0px;
+}
+
+/* ======= End Section About ================*/
+
+/* ======= Start Section Blog ================*/
+.blog.container {
+    display: flex;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+}
+
+.container aside ul {
+    color: #535762;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.blog-content {
+    width: 60%;
+    position: relative;
+}
+
+.blog-content i {
+    padding: 50px 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    background-color: #ddd;
+    color: #535762;
+    border-radius: 5px;
+}
+
+.blog-content button {
+    border: none;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 15px;
+    margin: 15px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.blog p {
+    margin: 10px 0px;
+}
+
+.blog-content p:nth-of-type(2) {
+    color: #535762;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.blog input {
+    padding: 5px;
+    outline: none;
+    border: 1px solid #535762;
+    border-radius: 2px;
+
+}
+
+.blog h4 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.blog aside:last-of-type i {
+    color: var(--second-color);
+    margin: 0px 8px;
+
+}
+
+.blog aside:last-of-type li:not(.blog aside:last-of-type li:last-child),
+.features aside li:not(.features aside li:last-child) {
+    border-bottom: 1px dashed #ddd;
+}
+
+.blog aside:last-of-type li:last-child {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.blog.container:last-of-type {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    
+}
+
+.blog.container:last-of-type aside li {
+    border: none;
+    border-bottom: 1px solid transparent !important;
+}
+
+.blog.container:last-of-type aside li i {
+    color: #535762;
+}
+
+.left-side {
+    width: 18%;
+}
+
+.left-side h3 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.left-side p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* ======= End Section Blog ================*/
+
+
+
+/* ======= Start Section Work ================*/
+.teams.container.our-work {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+}
+
+.teams.container.our-work .fa-palette {
+    font-size: 150px;
+}
+
+/* ======= End Section Work ================*/
+
+
+/* ======= Start Section Features ================*/
+.feature {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-bottom: 100px;
+}
+
+.feat {
+    border: 1px solid #ddd;
+
+    text-align: center;
+    width: 30%;
+}
+
+.feat ul li {
+    padding: 15px;
+}
+
+.feat ul li:not(.feat ul li:last-child) {
+    border-bottom: 1px solid #ddd;
+
+}
+
+.feat ul li:nth-child(2) {
+    background-color: #ddd;
+    color: var(--second-color);
+}
+
+.feat ul li:nth-child(2) span {
+    color: var(--second-color);
+    font-size: 40px;
+}
+
+.feat ul li:last-child {
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.feat ul li:nth-child(3),
+.feat ul li:nth-child(4),
+.feat ul li:nth-child(5) {
+    font-size: 12px;
+}
+
+.features aside {
+    width: 20%;
+
+}
+
+.features aside li i {
+    color: var(--second-color);
+    margin: 0px 8px;
+}
+
+.features aside h3,
+.features aside p {
+    font-size: 13px;
+    color: #535762;
+    margin-top: 15px;
+
+}
+
+.features aside h3 {
+    border-top: 1px solid #DDD;
+    padding-top: 10px;
+}
+
+.features aside p {
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 10px;
+
+}
+
+/* ======= End Section Features ================*/
+
+
+/* ======= Start Section Contact ================*/
+iframe {
+    width: 100%;
+    height: 300px;
+    border: 2px dashed #ddd;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+
+}
+
+.contact h2 {
+    font-size: 15px;
+    color: #535762;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.contact form {
+    width: 70%;
+
+}
+
+.contact form input,
+.contact form textarea {
+    display: block;
+    margin: 15px 0px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form input {
+    width: 50%;
+}
+
+.contact form textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+
+}
+.contact form button {
+    background-color: #2F3239;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.contact ul {
+    width: 25%;
+}
+
+.contact ul li {
+    margin: 15px;
+}
+.contact ul li a {
+    color: #373B44;
+}
+/* ======= End Section Contact ================*/

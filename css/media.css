@@ -1,0 +1,123 @@
+@media screen and (max-width:768px) {
+
+    /* Nav Bar */
+    nav {
+        display: block;
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    nav ul li a {
+        margin: 0 5px;
+        padding: 10px 0px;
+        text-align: center;
+
+    }
+
+    /*Section Home  */
+    .home-title {
+        display: block;
+    }
+
+    .home-title img {
+        width: 100%;
+
+    }
+
+    section:nth-of-type(2) .boxes {
+        width: 100%;
+    }
+
+    /* Section About */
+    .team i {
+        width: 100%;
+        font-size: 50px;
+    }
+
+    /* Section Blog */
+    .blog.container {
+        display: block;
+
+    }
+
+    .blog-content {
+        width: 100%;
+    }
+
+    .blog.container aside:first-of-type {
+        display: none;
+    }
+
+    .left-side {
+        width: 100%;
+    }
+
+    /* Section Features */
+
+    .feature {
+        display: block;
+        width: 100%;
+    }
+
+    .feat {
+        width: 100%;
+    }
+
+    .features.container aside {
+        width: 100%;
+    }
+
+    /* Section Content */
+    .contact {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+
+    .contact ul {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .contact form input {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    /* Section About */
+    .teams.container.our-work {
+
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    }
+
+    .team i {
+        width: 100%;
+        font-size: 50px;
+    }
+
+    /* NavBar */
+    nav ul a {
+        padding-bottom: 20px;
+    }
+
+ 
+}
